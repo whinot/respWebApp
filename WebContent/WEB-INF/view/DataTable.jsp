@@ -60,18 +60,18 @@
 		<th data-breakpoints="xs">ID</th>
 		<th>First Name</th>
 		<th>Last Name</th>
+		<th>Job Title</th>
 		<th data-breakpoints="xs">Status</th>
-		<th data-type="html" data-breakpoints="xs sm md">Info</th>
 	</tr>
 	</thead>
 	<tbody>
 	<c:forEach var="queryUsers" items="${query}">
 	<tr>
+		<td>${queryUsers.id}</td>
 		<td>${queryUsers.firstName}</td>
 		<td>${queryUsers.lastName}</td>
 		<td>${queryUsers.jobTitle}</td>
 		<td>${queryUsers.status}</td>
-		<td><a href="#placeholder">Info link</a></td>
 	</tr>
 	</c:forEach>
 	</tbody>

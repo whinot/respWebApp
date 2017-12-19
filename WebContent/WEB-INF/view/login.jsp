@@ -5,17 +5,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Login</title>
-	<spring:url value="/resources/css/login.css" var="mainCss" />
-	<spring:url value="/resources/js/main.js" var="mainJs" />
 
-	
 	<!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link href="${mainCss}" rel="stylesheet" />
     <script src="${mainJs}"></script>
-
-    
-    
+	<!-- Jquery -->
     <script src="http://code.jquery.com/jquery-3.2.1.js"
   	integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   	crossorigin="anonymous">
@@ -41,7 +36,6 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li ><a  class="navbar-brand" href="#" >Prompt2</a></li>
-		<li > <span class="navbar-text">Welcome user XXXXXX</span></li >
       </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -63,7 +57,7 @@
 			    	<form:form action="processForm" accept-charset="UTF-8" role="form">
                     <fieldset>
 			    	  	<div class="form-group">
-			    		    <input class="form-control" placeholder="yourmail@example.com" name="email" type="text">
+			    		    <input class="form-control" placeholder="username or mail" name="username" type="text">
 			    		</div>
 			    		<div class="form-group">
 			    			<input class="form-control" placeholder="Password" name="password" type="password" value="">
@@ -76,9 +70,7 @@
 			    		<input class="btn btn-lg btn-success btn-block" type="submit" value="Login">
 			    	</fieldset>
 			      	</form:form>
-                      <hr/>
-                    <center><h4>OR</h4></center>
-                    <input class="btn btn-lg btn-facebook btn-block" type="submit" value="Login via facebook">
+                 <hr/>
 			    </div>
 			</div>
 		</div>
