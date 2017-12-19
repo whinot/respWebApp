@@ -18,7 +18,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages="com.protoApp")
-public class AppConfig implements WebMvcConfigurer {
+public class AppConfig implements WebMvcConfigurer  {
 	
 	@Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
@@ -36,5 +36,7 @@ public class AppConfig implements WebMvcConfigurer {
 		
 		return viewResolver;
 	}
+	
+	
 
 }
