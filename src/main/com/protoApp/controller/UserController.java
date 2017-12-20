@@ -1,9 +1,11 @@
-package com.protoApp.main.controller;
+package com.protoApp.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import com.protoApp.main.Student;
+
+import com.protoApp.Student;
+
 import java.util.List;
 import java.util.ArrayList;
 

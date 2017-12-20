@@ -1,4 +1,4 @@
-package com.protoApp.main.config;
+package com.protoApp.config;
 import java.util.concurrent.TimeUnit;
 
 import org.springframework.context.annotation.Bean;

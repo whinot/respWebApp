@@ -1,4 +1,4 @@
-package com.protoApp.main.config;
+package com.protoApp.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

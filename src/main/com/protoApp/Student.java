@@ -1,4 +1,4 @@
-package com.protoApp.main;
+package com.protoApp;
 
 public class Student {
 	
