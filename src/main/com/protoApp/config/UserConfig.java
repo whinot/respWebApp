@@ -12,7 +12,7 @@ import org.springframework.security.core.userdetails.User;
 
 @Configuration
 @EnableWebSecurity
-public class SecurityConfig implements WebMvcConfigurer  {
+public class UserConfig implements WebMvcConfigurer  {
 
 	@Bean
 	public UserDetailsService userDetailsService() throws Exception {
@@ -25,5 +25,7 @@ public class SecurityConfig implements WebMvcConfigurer  {
 		return manager;
 		
 	}
+	
+	
 	
 }

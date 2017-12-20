@@ -1,5 +1,6 @@
 package com.protoApp.controller;
 
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,7 +15,7 @@ public class UserController {
 	
 	public static List <Student> studentList= new ArrayList<Student>();
 	
-	@RequestMapping("/processForm")
+	@RequestMapping("/user")
 	public String getTable(Model model){
 		
 		studentList.clear();
