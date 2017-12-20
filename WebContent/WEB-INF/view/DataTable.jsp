@@ -41,7 +41,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li ><a  class="navbar-brand" href="#" >Prompt2</a></li>
-		<li > <span class="navbar-text">Welcome user XXXXXX</span></li >
+		<li > <span class="navbar-text">Welcome user ${sessionScope.LOGGEDINUSER.groupname} </span></li >
       </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -77,9 +77,7 @@
 	</tbody>
 	</table>
 </div>
-  		<p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-  </p>
+ 
 </div>
 
 </body>
