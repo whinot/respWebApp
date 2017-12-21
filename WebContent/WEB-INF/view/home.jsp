@@ -39,7 +39,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
       	<sec:authorize access="${functionBean.managerFunction}">
-        <li><a href="managerPage">Manager Menu <span class="sr-only">(current)</span></a></li>
+        <li><a href="manager">Manager Menu <span class="sr-only">(current)</span></a></li>
         </sec:authorize>
         <sec:authorize access="${functionBean.userFunction}">
         <li><a href="user">User Menu <span class="sr-only">(current)</span></a></li>

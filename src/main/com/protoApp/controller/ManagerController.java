@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class ManagerController {
 	
-	@RequestMapping("/managerPage")
+	@RequestMapping("/manager")
 	public String getManagerData(Model model){
 		
 		model.addAttribute("managerData","Test");
