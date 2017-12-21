@@ -20,6 +20,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @ComponentScan(basePackages="com.protoApp")
 public class AppConfig implements WebMvcConfigurer  {
 	
+	//resource scan
 	@Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/resources/**")
@@ -27,6 +28,7 @@ public class AppConfig implements WebMvcConfigurer  {
                 .setCacheControl(CacheControl.maxAge(1, TimeUnit.HOURS).cachePublic());
     }
 	
+	//suffix and prefix
 	@Bean
 	public ViewResolver viewResolver() {
 		

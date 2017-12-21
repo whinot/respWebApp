@@ -58,7 +58,9 @@
           <ul class="dropdown-menu">
             <li><a href="#">Contattaci</a></li>
             <li><a href="#">Impostazioni</a></li>
-            <li><a href="#">Modifica Ruoli</a></li>
+            <sec:authorize access="${functionBean.roleManagerFunction}">
+            <li><a href="roleManager">Modifica Ruoli</a></li>
+            </sec:authorize>
             <li role="separator" class="divider"></li>
             <li><a href="logout">Esci</a></li>
           </ul>
@@ -67,6 +69,7 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+  
     
 <div class = "container">     
   <div class="jumbotron">
