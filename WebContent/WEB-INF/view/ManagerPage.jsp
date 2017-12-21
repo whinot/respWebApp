@@ -1,11 +1,10 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="sec"  uri="http://www.springframework.org/security/tags" %>
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Home</title>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Manager Menu</title>
 <!-- Jquery -->
 <script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="crossorigin="anonymous"></script>
 
@@ -18,10 +17,8 @@
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-	
 </head>
 <body>
-
  <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -39,7 +36,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
       	<sec:authorize access="${functionBean.managerFunction}">
-        <li><a href="managerPage">Manager Menu <span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="managerPage">Manager Menu <span class="sr-only">(current)</span></a></li>
         </sec:authorize>
         <sec:authorize access="${functionBean.userFunction}">
         <li><a href="user">User Menu <span class="sr-only">(current)</span></a></li>
@@ -67,11 +64,11 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-    
+ 
 <div class = "container">     
   <div class="jumbotron">
     	<div class = "container">
-  		<h1 class="display-3">Demo webapp</h1>
+  		<h1 class="display-3">${managerData}</h1>
   		<p class="lead">Questa app è stata sviluppata usando Java 8, Spring (Mvc, Security), Hibernate , Bootstrap, HTML5 e Jquery</p>
   	</div>
   	<div class = "container">
@@ -89,6 +86,6 @@
 		 </p>
   </div>
   </div>				 
-  </div>	
+  </div>
 </body>
 </html>
