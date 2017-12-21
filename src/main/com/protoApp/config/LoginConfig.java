@@ -24,6 +24,7 @@ public class LoginConfig extends WebSecurityConfigurerAdapter  implements WebMvc
 			.formLogin()
 			.loginPage("/login")
 			.loginProcessingUrl("/authenticateUser").permitAll()
+			
 			.and()
 			.logout().permitAll();
 
