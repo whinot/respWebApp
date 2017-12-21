@@ -17,9 +17,8 @@ public class LoginConfig extends WebSecurityConfigurerAdapter  implements WebMvc
 		http 
 			.authorizeRequests()
 			.antMatchers("/homePage","/").access("hasRole('ADMIN') or hasRole('USER') or hasRole ('MANAGER')")
-			.antMatchers("/**").access("hasRole('ADMIN')")
-			.antMatchers("/user/**").access("hasRole('USER') ")
-			.antMatchers("/manager/**").access("hasAnyRoles('MANAGER')")
+			.antMatchers("/user/**").access("hasRole('USER') or hasRole('ADMIN') ")
+			.antMatchers("/manager/**").access("hasAnyRoles('MANAGER') or hasRole('ADMIN')")
 			
 			.and()
 			.formLogin()
